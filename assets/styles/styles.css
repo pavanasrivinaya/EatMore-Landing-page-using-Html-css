@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: url('../images/rest.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+  padding: 1rem;
+}
+nav {
+  padding: 0.5rem 0;
+}
+.pre-nav {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+.call {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  flex: 1 auto;
+}
+nav li a {
+  background-color: #756767;
+  padding: 1rem 2rem;
+  display: block;
+  text-align: center;
+}
+
+nav a.active {
+  background-color: #522929;
+  color: white;
+  font-weight: bold;
+}
+
+nav a.highlight {
+  background-color: #363131;
+  color: white;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+
+.content h1 {
+  color: white;
+  background-color: #000000;
+  opacity: 46%;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.white-link {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  font-size: 20px;
+  box-shadow: 3px 3px #363131;
+}
+
+@media screen and (max-width: 768px) {
+  .pre-nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+}
